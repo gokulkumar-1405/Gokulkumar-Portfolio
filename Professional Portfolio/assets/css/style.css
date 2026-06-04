@@ -1036,6 +1036,14 @@ body::before {
 @media (max-width: 768px) {
     .vision-card { padding: 2.5rem 1.5rem; }
     .vision-main-text { font-size: 1.2rem; }
+    .vision-points {
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .v-point {
+        width: 100%;
+    }
 }
 
 /* ============================================
@@ -2089,7 +2097,7 @@ body::before {
     }
 
     .nav-menu.open {
-        max-height: 400px;
+        max-height: 500px;
     }
 
     .nav-link {
@@ -2098,7 +2106,11 @@ body::before {
         padding: 0.7rem 1rem;
     }
 
-    .nav-cta { display: none; }
+    .nav-cta {
+        display: flex;
+        margin-top: 0.5rem;
+        justify-content: center;
+    }
 
     .mobile-nav-title { display: flex; }
 }
